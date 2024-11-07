@@ -8,10 +8,9 @@ users = []
 
 
 class User(BaseModel):
-    id: int = None
+    id: int
     username: str
-    age: int = None
-
+    age: int 
 
 @app.get('/users')
 async def get_user_page() -> List[User]:
